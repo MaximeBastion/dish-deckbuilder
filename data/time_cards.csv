@@ -1,0 +1,4 @@
+id,name_en,name_fr,shop,type,time_cost,time_produced,effect_en,effect_fr,notes
+prep,Prep,Preparation,Starter,Time,,1,Gain 1 Time.,Gagnez 1 Temps.,Starter deck card.
+practice_session,Practice Session,Seance d'entrainement,Default,Time,3,2,Gain 2 Time.,Gagnez 2 Temps.,
+masterclass,Masterclass,Masterclass,Default,Time,6,3,Gain 3 Time.,Gagnez 3 Temps.,

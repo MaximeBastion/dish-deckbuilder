@@ -18,4 +18,5 @@ to review.
 - [dish_tags.csv](data/dish_tags.csv): the six strict dish tags.
 - [faction_tag_access.csv](data/faction_tag_access.csv): which factions share
   each tag.
-
+- [factions.csv](data/factions.csv): faction flavor and mechanical identities.
+- [time_cards.csv](data/time_cards.csv): baseline Time cards.
