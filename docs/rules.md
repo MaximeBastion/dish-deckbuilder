@@ -23,6 +23,9 @@ but the gameplay focus should stay on dishes and what the chef/player does.
 - **Time**: the resource spent to learn cards from the market.
 - **Learn**: buy a card and add it to your deck.
 - **Dish**: a card that may be presented as part of a meal.
+- **Attach**: place a Dish under another Dish. An attached Dish adds its Taste
+  and tags to the Dish it is attached to, but does not count as a separate
+  presented Dish or course.
 - **Taste**: the scoring value of a dish.
 - **Favor**: progress on the judge track.
 - **Peel**: remove a card from your deck permanently.
@@ -87,20 +90,36 @@ Open: whether every first learned card should topdeck, or only some cards.
 
 On your turn:
 
-1. Play cards and learn cards in any order.
-2. Present dishes as your meal.
+1. Cook: play cards and learn cards in any order.
+2. Present your final meal.
 3. The opponent has one interaction step and may play Reactions.
 4. Score your presented meal and move the judge.
-5. Discard played cards and unplayed hand cards.
+5. Discard played cards, presented dishes, and unplayed hand cards.
 6. Draw a new hand.
 
 Open: exact hand size. Start by testing 5.
 
+## Drawing And Reshuffling
+
+Played cards stay in a play area until cleanup. Presented dishes stay in the
+presented meal until cleanup. They do not immediately go to the discard pile.
+
+When a player must draw or reveal from an empty deck, shuffle that player's
+discard pile to form a new deck, then continue drawing or revealing. Cards
+played this turn, presented this turn, or learned this turn are not in the
+discard pile unless an effect explicitly put them there.
+
 ## Presenting Dishes
 
-Each turn, a player may present dishes from their hand as a meal. Course labels
-matter, but they are not hard slots for now: a meal may include duplicate course
-types.
+After the Cook step, a player presents dishes from their hand as a final meal.
+Course labels matter, but they are not hard slots for now: a meal may include
+duplicate course types.
+
+Card effects resolve when played by default. Effects that depend on the final
+presented meal should say `During judging`.
+
+During the Cook step, effects that modify a Dish may target a Dish in hand.
+Those modifiers apply if that Dish is presented this turn.
 
 Current course types:
 
