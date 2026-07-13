@@ -1,2 +1,2 @@
-id,name_en,name_fr,type,effect_en,effect_fr,notes
-distraction,Distraction,Distraction,Status,No effect.,Aucun effet.,Dead card added by interaction effects.
+id,name_en,name_fr,type,frame_color,effect_en,effect_fr,notes
+distraction,Distraction,Distraction,Status,#6C5A7B,No effect.,Aucun effet.,Dead card added by interaction effects.

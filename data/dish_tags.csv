@@ -1,7 +1,7 @@
-tag,en,fr,shared_by,notes
-Meat,Meat,Viande,French+American,
-Seafood,Seafood,Fruits de mer,French+Japanese,
-Cheese,Cheese,Fromage,French+Italian,
-Fried,Fried,Friture,American+Japanese,
-Tomato,Tomato,Tomate,American+Italian,
-Rice,Rice,Riz,Japanese+Italian,
+tag,en,fr,color_hex,shared_by,notes
+Meat,Meat,Viande,#9A4D2E,French+American,
+Seafood,Seafood,Fruits de mer,#1F8A9B,French+Japanese,
+Cheese,Cheese,Fromage,#F2C14E,French+Italian,
+Fried,Fried,Friture,#D9822B,American+Japanese,
+Tomato,Tomato,Tomate,#D6453D,American+Italian,
+Rice,Rice,Riz,#E6D8B8,Japanese+Italian,

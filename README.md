@@ -12,6 +12,8 @@ to review.
 - [Rules](docs/rules.md): current playtest rules and unresolved questions.
 - [Design concepts](docs/design-concepts.md): emotional target, design pillars,
   faction identities, and constraints.
+- [Art direction](docs/art-direction.md): v1 placeholder artwork style and
+  prompt template.
 
 ## Data
 
