@@ -1,0 +1,13 @@
+faction,tag,shared_with,notes
+French,Meat,American,
+French,Seafood,Japanese,
+French,Cheese,Italian,
+American,Meat,French,
+American,Fried,Japanese,
+American,Tomato,Italian,
+Japanese,Seafood,French,
+Japanese,Fried,American,
+Japanese,Rice,Italian,
+Italian,Cheese,French,
+Italian,Tomato,American,
+Italian,Rice,Japanese,
