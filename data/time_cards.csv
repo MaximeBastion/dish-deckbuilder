@@ -1,4 +1,4 @@
-id,name_en,name_fr,shop,type,frame_color,time_cost,time_produced,effect_en,effect_fr,notes
-prep,Prep,Preparation,Starter,Time,#D6A23A,,1,Gain 1 Time.,Gagnez 1 Temps.,Starter deck card.
-practice_session,Practice Session,Seance d'entrainement,Default,Time,#D6A23A,3,2,Gain 2 Time.,Gagnez 2 Temps.,
-masterclass,Masterclass,Masterclass,Default,Time,#D6A23A,6,3,Gain 3 Time.,Gagnez 3 Temps.,
+id,name_en,name_fr,shop,type,frame_color,time_cost,time_produced,effect_en,effect_fr,notes,artwork_url
+prep,Prep,Preparation,Starter,Time,#D6A23A,,1,Gain 1 Time.,Gagnez 1 Temps.,Starter deck card.,https://raw.githubusercontent.com/MaximeBastion/dish-deckbuilder/develop/assets/card-art/v1/prep.png
+practice_session,Practice Session,Seance d'entrainement,Default,Time,#D6A23A,3,2,Gain 2 Time.,Gagnez 2 Temps.,,https://raw.githubusercontent.com/MaximeBastion/dish-deckbuilder/develop/assets/card-art/v1/practice_session.png
+masterclass,Masterclass,Masterclass,Default,Time,#D6A23A,6,3,Gain 3 Time.,Gagnez 3 Temps.,,https://raw.githubusercontent.com/MaximeBastion/dish-deckbuilder/develop/assets/card-art/v1/masterclass.png

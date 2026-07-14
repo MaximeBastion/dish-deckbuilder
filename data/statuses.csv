@@ -1,2 +1,2 @@
-id,name_en,name_fr,type,frame_color,effect_en,effect_fr,notes
-distraction,Distraction,Distraction,Status,#6C5A7B,No effect.,Aucun effet.,Dead card added by interaction effects.
+id,name_en,name_fr,type,frame_color,effect_en,effect_fr,notes,artwork_url
+distraction,Distraction,Distraction,Status,#6C5A7B,No effect.,Aucun effet.,Dead card added by interaction effects.,https://raw.githubusercontent.com/MaximeBastion/dish-deckbuilder/develop/assets/card-art/v1/distraction.png

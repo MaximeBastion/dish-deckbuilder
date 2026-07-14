@@ -47,6 +47,17 @@ The card frame/UI should provide borders. Artwork should not draw its own frame.
   energy.
 - Keep the image appetizing unless the card is intentionally gross or hostile.
 
+## Action Cards
+
+Action artwork should be visually distinct from dish artwork.
+
+- Emphasize tools, motion, and card slips over finished plated food.
+- Use diagonal composition, motion streaks, and a subtle stamped-paper burst.
+- Technique cards can feel energetic and constructive.
+- Reaction cards should feel sharper and more disruptive.
+- A dish may appear as a target or silhouette, but the action should be the
+  first read.
+
 ## Faction Mood
 
 - **French**: elegant, smug, polished, refined, slightly pretentious.
@@ -66,4 +77,3 @@ identity benefits from it. Examples:
 - a ridiculous pickle on `Deep-Fried Pickles`.
 
 Use faces as a deliberate comedy tool, not as the default style.
-
