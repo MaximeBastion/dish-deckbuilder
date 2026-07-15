@@ -1,0 +1,66 @@
+name,body,color,cost
+Simple Soup,Dish - Extra; Taste 1.,#7A7A72,2
+Prep,Time; Gain 1 Time.,#D6A23A,
+Practice Session,Time; Gain 2 Time.,#D6A23A,3
+Masterclass,Time; Gain 3 Time.,#D6A23A,6
+Cheese Board,Dish - Extra; Taste 2.; Tags: Cheese.; During judging if you present another Cheese dish gain +2 Favor.,#2F5DA8,3
+Raclette,"Dish - Main; Taste 4.; Tags: Cheese, Meat.; Other Cheese dishes you present get +1 Taste.",#2F5DA8,5
+Foie Gras Toast,Dish - Appetizer; Taste 5.; Tags: Meat.; If this is your only Appetizer it gets +2 Taste.,#2F5DA8,5
+Bouillabaisse,Dish - Main; Taste 3.; Tags: Seafood.; During judging if this is your only Main it gets +2 Taste.,#2F5DA8,4
+Escargots,Dish - Appetizer; Taste 2.; Tags: Seafood.; If the Judge favors your opponent this gets +2 Taste.,#2F5DA8,3
+Saucisson,Dish - Extra; Taste 1.; Tags: Meat.; You may attach this to another Dish.,#2F5DA8,2
+Burger,"Dish - Main; Taste 2.; Tags: Meat, Tomato.; During judging if you present an Extra this gets +1 Taste.",#C44736,3
+Hot Dog,Dish - Main; Taste 2.; Tags: Meat.; During judging if you present another Main this gets +1 Taste.,#C44736,2
+Fried Chicken,"Dish - Main; Taste 3.; Tags: Meat, Fried.; During judging if you present another Fried dish this gets +2 Taste.",#C44736,4
+French Fries,Dish - Extra; Taste 1.; Tags: Fried.; During judging if you present a Meat dish this gets +2 Taste.,#C44736,2
+Deep-Fried Pickles,Dish - Appetizer; Taste 1.; Tags: Fried.; During judging if you present another Fried dish this gets +2 Taste.,#C44736,2
+Sloppy Joe,"Dish - Main; Taste 2.; Tags: Meat, Tomato.; During judging if you present another Tomato dish gain +1 Favor.",#C44736,3
+Sushi Set,"Dish - Main; Taste 3.; Tags: Seafood, Rice.; During judging if you present Appetizer Main and Dessert gain +2 Favor.",#2F7D6D,4
+Onigiri,Dish - Extra; Taste 1.; Tags: Rice.; Look at the top 2 cards of your deck. Discard up to 1 of them.,#2F7D6D,2
+Tempura,"Dish - Appetizer; Taste 2.; Tags: Seafood, Fried.; During judging if you present no duplicate core course this gets +1 Taste.",#2F7D6D,3
+Katsu Curry Rice,"Dish - Main; Taste 3.; Tags: Fried, Rice.; If you Peeled this turn this gets +1 Taste.",#2F7D6D,4
+Sashimi,Dish - Appetizer; Taste 2.; Tags: Seafood.; Draw 1 then discard 1.,#2F7D6D,3
+Takoyaki,"Dish - Extra; Taste 2.; Tags: Seafood, Fried.; If this is your only Extra you may Peel 1.",#2F7D6D,3
+Margherita Pizza,"Dish - Main; Taste 2.; Tags: Cheese, Tomato.; During judging if you present another Cheese or Tomato dish this gets +1 Taste.",#3F8F45,3
+Spaghetti Bolognese,Dish - Main; Taste 2.; Tags: Tomato.; If the Judge favors your opponent this gets +2 Taste.,#3F8F45,3
+Caprese,"Dish - Appetizer; Taste 2.; Tags: Cheese, Tomato.; During judging if you present a Main gain +1 Favor.",#3F8F45,3
+Risotto,"Dish - Main; Taste 3.; Tags: Cheese, Rice.; During judging if you present another Rice or Cheese dish gain +1 Favor.",#3F8F45,4
+Tiramisu,Dish - Dessert; Taste 2.; If the Judge favors your opponent gain +2 Favor.,#3F8F45,3
+Arancini,"Dish - Appetizer; Taste 2.; Tags: Cheese, Rice.; During judging if you present another Rice dish gain +1 Favor.",#3F8F45,3
+Knife Skills,Technique; Upgrade a starter card by up to 2.,#7A7A72,3
+Clean Station,Technique; Peel up to 2 starter cards.,#7A7A72,3
+Taste Test,Technique; Draw 2 then discard 1.,#7A7A72,2
+Heckle,Technique; Give your opponent a Distraction.,#7A7A72,5
+Perfect,Technique; Choose a Dish. Double its Taste this turn.,#2F5DA8,4
+Mock,Reaction; Choose opponent's highest-Taste presented dish. It gets -2 Taste this turn. Draw 1.,#2F5DA8,3
+Drown in Butter,Reaction; Choose an opponent's presented dish. If it is not French it gets -3 Taste this turn.,#2F5DA8,3
+Mine Is Better,Reaction; Reveal a Dish from your hand. If it has more Taste than an opponent's presented dish that dish gets -3 Taste this turn.,#2F5DA8,4
+Bon Appetit!,Technique; Draw 1. During judging if one of your dishes has 5 or more Taste gain +2 Favor.,#2F5DA8,3
+Supersize Me!,Technique; During judging copy one of your dishes as an additional presented dish.,#C44736,5
+More Meat!,Technique; Tags: Meat.; Your Meat dishes get +1 Taste this turn. During judging if you present at least 2 Meat dishes gain +2 Favor.,#C44736,3
+Deep Fry,Technique; Tags: Fried.; Choose a Dish. It becomes Fried this turn and gets +2 Taste.,#C44736,3
+Party,Technique; Draw 1. During judging if you present at least 3 dishes gain +2 Favor.,#C44736,3
+Ketchup Me That,"Technique; Tags: Meat, Fried.; Choose a Meat or Fried dish. It gets +2 Taste.",#C44736,2
+Appropriate,Reaction; Choose an opponent's presented dish. After opponent scores steal that dish and add it to your discard pile. Peel Appropriate.,#C44736,6
+Purify,Technique; Peel 2.,#2F7D6D,2
+Order,Technique; Draw 2 then put 1 card from your hand on top of your deck.,#2F7D6D,2
+Omakase,Technique; Reveal cards from your deck until you reveal a Dish. Present it. If it completes all 3 core courses gain +2 Favor.,#2F7D6D,5
+Less Is More,Technique; During judging if you present exactly Appetizer Main and Dessert with no duplicate core course gain +5 Favor.,#2F7D6D,3
+Wasabi Attack,Reaction; Tags: Seafood.; Choose an opponent dish. It gets -1 Taste. If it is not Seafood it gets -3 Taste instead.,#2F7D6D,4
+"Mangia, Mangia!",Technique; Draw 1. If the Judge favors your opponent draw 2 and gain 1 Time instead.,#3F8F45,2
+Mamma Mia!,Technique; Reveal cards from your deck until you reveal a Dish. Put it into your hand. If the Judge favors your opponent you may present it this turn.,#3F8F45,3
+Secondo,Technique; During judging score one Main a second time.,#3F8F45,6
+Breaking Spaghetti Is A Crime,Reaction; If an opponent modified a dish this turn give them a Distraction and that dish gets -2 Taste.,#3F8F45,4
+More Olive Oil!,"Technique; Tags: Tomato, Cheese.; Choose a Tomato or Cheese dish. It gets +2 Taste. If the Judge favors your opponent it gets +3 Taste instead.",#3F8F45,3
+More Parmigiano!,"Technique; Tags: Cheese, Tomato.; Choose a Main. It gets +2 Taste. If it is Cheese or Tomato it gets +3 Taste instead.",#3F8F45,2
+5 Stars,Passive; At judging if one of your dishes has strictly more Taste than every opponent dish gain +2 Favor.,#2F5DA8,7
+Bottomless Refills,Passive; During judging if you present an Extra gain +2 Favor.,#C44736,5
+Conveyor Belt,Passive; At the start of your turn look at the top 3 cards of your deck and put them back in any order.,#2F7D6D,5
+Nonna's Table,Passive; The first time each turn you present 4 or more dishes gain +2 Favor. If the Judge favors your opponent gain +3 Favor instead.,#3F8F45,6
+Steakhouse,Passive; Tags: Meat.; Your first Meat dish each turn gets +1 Taste. During judging if you present at least 2 Meat dishes gain +2 Favor.,#9A4D2E,5
+Seafood Counter,Passive; Tags: Seafood.; During judging if you present a Seafood dish gain +1 Favor and you may Peel 1.,#1F8A9B,4
+Cheese Wheel,Passive; Tags: Cheese.; Your Cheese dishes get +1 Taste.,#F2C14E,5
+Fry Station,Passive; Tags: Fried.; During judging if you present a Fried dish gain +2 Favor.,#D9822B,4
+Red Sauce Empire,Passive; Tags: Tomato.; Your Tomato dishes get +1 Taste and cost 1 less to learn.,#D6453D,4
+Rice Cooker,Passive; Tags: Rice.; Rice dishes cost 1 less to learn. The first Rice dish you learn each turn goes on top of your deck even if it is not your first learned card.,#E6D8B8,4
+Distraction,Status; No effect.,#6C5A7B,

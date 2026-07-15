@@ -1,0 +1,557 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dish Deckbuilder Card Template Prototype</title>
+  <style>
+    :root {
+      --paper: #f3dfb8;
+      --ink: #241910;
+      --muted: #6b5a43;
+      --shadow: rgba(24, 16, 8, 0.35);
+      --dish: #3f8f45;
+      --action: #7a7a72;
+      --reaction: #c44736;
+      --passive: #2f7d6d;
+      --status: #6c5a7b;
+      --time: #d6a23a;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      background:
+        linear-gradient(120deg, rgba(255, 255, 255, 0.38), rgba(255, 255, 255, 0)),
+        radial-gradient(circle at 18% 12%, rgba(214, 162, 58, 0.28), transparent 28%),
+        radial-gradient(circle at 80% 0%, rgba(47, 125, 109, 0.16), transparent 32%),
+        #ead2a6;
+    }
+
+    main {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 28px;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: 30px;
+      letter-spacing: 0;
+    }
+
+    .intro {
+      max-width: 820px;
+      margin: 0 0 26px;
+      color: #493824;
+      font-size: 16px;
+      line-height: 1.45;
+    }
+
+    .sheet {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      align-items: start;
+    }
+
+    .card-wrap {
+      display: grid;
+      gap: 10px;
+      justify-items: center;
+    }
+
+    .label {
+      width: min(100%, 320px);
+      color: #493824;
+      font: 700 12px/1.2 Arial, sans-serif;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .card {
+      --frame: var(--dish);
+      --accent: var(--frame);
+      width: min(100%, 320px);
+      aspect-ratio: 5 / 7;
+      position: relative;
+      display: grid;
+      grid-template-rows: 44px 172px 28px 1fr 28px;
+      padding: 10px;
+      border-radius: 14px;
+      color: var(--ink);
+      background:
+        linear-gradient(90deg, var(--frame) 0 15px, transparent 15px),
+        linear-gradient(145deg, rgba(255, 255, 255, 0.34), transparent 32%),
+        var(--paper);
+      border: 3px solid #2a1b0e;
+      box-shadow: 0 14px 24px var(--shadow);
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      inset: 7px;
+      border: 1px solid rgba(42, 27, 14, 0.42);
+      border-radius: 9px;
+      pointer-events: none;
+      z-index: 4;
+    }
+
+    .card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 22% 16%, rgba(255, 255, 255, 0.42), transparent 20%),
+        radial-gradient(circle at 80% 74%, rgba(87, 52, 24, 0.08), transparent 34%);
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .titlebar,
+    .art,
+    .typebar,
+    .textbox,
+    .footer {
+      position: relative;
+      z-index: 2;
+    }
+
+    .titlebar {
+      display: grid;
+      grid-template-columns: 1fr 38px;
+      gap: 8px;
+      align-items: center;
+      min-width: 0;
+      padding-left: 12px;
+    }
+
+    .title {
+      min-width: 0;
+      padding: 4px 8px;
+      border-radius: 6px;
+      background: rgba(255, 248, 224, 0.72);
+      border: 1px solid rgba(42, 27, 14, 0.22);
+      font-weight: 900;
+      font-size: 22px;
+      line-height: 1;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .cost {
+      display: grid;
+      place-items: center;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      color: #241910;
+      background:
+        radial-gradient(circle at 30% 26%, #fff5c6, transparent 22%),
+        linear-gradient(145deg, #f2d070, #b97920);
+      border: 2px solid #2a1b0e;
+      font: 900 20px/1 Arial, sans-serif;
+      box-shadow: inset 0 -2px 0 rgba(82, 42, 10, 0.3);
+    }
+
+    .art {
+      margin: 2px 4px 0 14px;
+      border: 2px solid #2a1b0e;
+      border-radius: 8px;
+      background: #e8cf9d;
+      overflow: hidden;
+      box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.28);
+    }
+
+    .art img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+
+    .typebar {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 6px;
+      align-items: center;
+      margin: 7px 4px 0 14px;
+      padding: 4px 7px;
+      border-radius: 6px;
+      color: #241910;
+      background: rgba(255, 248, 224, 0.84);
+      border: 1px solid rgba(42, 27, 14, 0.42);
+      font: 800 12px/1.1 Arial, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .typebar .value {
+      justify-self: end;
+      color: #fff7d7;
+      background: #2a1b0e;
+      border-radius: 999px;
+      padding: 3px 7px;
+      letter-spacing: 0;
+    }
+
+    .textbox {
+      display: grid;
+      align-content: start;
+      gap: 8px;
+      margin: 8px 4px 0 14px;
+      padding: 10px 10px 8px;
+      border-radius: 8px;
+      background:
+        linear-gradient(180deg, rgba(255, 250, 232, 0.92), rgba(242, 222, 181, 0.9));
+      border: 1px solid rgba(42, 27, 14, 0.45);
+      font-size: 15px;
+      line-height: 1.25;
+      overflow: hidden;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+
+    .tag {
+      padding: 3px 7px;
+      border-radius: 999px;
+      color: #fff8e0;
+      background: var(--accent);
+      border: 1px solid rgba(42, 27, 14, 0.45);
+      font: 800 10px/1 Arial, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .rules {
+      margin: 0;
+    }
+
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 8px;
+      min-width: 0;
+      margin: 0 4px 0 14px;
+      color: rgba(36, 25, 16, 0.72);
+      font: 800 10px/1 Arial, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .copies {
+      white-space: nowrap;
+    }
+
+    .mini-row {
+      display: flex;
+      gap: 4px;
+      align-items: center;
+    }
+
+    .pip {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--frame);
+      border: 1px solid rgba(42, 27, 14, 0.5);
+    }
+
+    .dish {
+      --frame: #3f8f45;
+      --accent: #d6453d;
+    }
+
+    .dish .typebar {
+      border-left: 7px solid var(--frame);
+    }
+
+    .action {
+      --frame: #7a7a72;
+      --accent: #7a7a72;
+      background:
+        linear-gradient(90deg, var(--frame) 0 15px, transparent 15px),
+        linear-gradient(135deg, transparent 0 42%, rgba(122, 122, 114, 0.2) 42% 48%, transparent 48%),
+        var(--paper);
+    }
+
+    .action .art {
+      transform: rotate(-1.2deg);
+    }
+
+    .action .typebar {
+      background: #efe7d4;
+      border-left: 7px solid var(--frame);
+    }
+
+    .reaction {
+      --frame: #2f5da8;
+      --accent: #c44736;
+      background:
+        linear-gradient(90deg, var(--frame) 0 15px, transparent 15px),
+        repeating-linear-gradient(135deg, rgba(196, 71, 54, 0.18) 0 8px, transparent 8px 19px),
+        var(--paper);
+    }
+
+    .reaction .typebar {
+      color: #fff6de;
+      background: #5b1f18;
+      border-color: #2a1b0e;
+    }
+
+    .reaction .typebar .value {
+      color: #2a1b0e;
+      background: #fff2c8;
+    }
+
+    .passive {
+      --frame: #2f7d6d;
+      --accent: #2f7d6d;
+      background:
+        linear-gradient(90deg, var(--frame) 0 15px, transparent 15px),
+        linear-gradient(180deg, rgba(47, 125, 109, 0.22), transparent 34%),
+        var(--paper);
+    }
+
+    .passive .titlebar::before {
+      content: "ONGOING";
+      position: absolute;
+      left: 14px;
+      top: -6px;
+      color: rgba(36, 25, 16, 0.56);
+      font: 900 8px/1 Arial, sans-serif;
+      letter-spacing: 0.16em;
+    }
+
+    .passive .typebar {
+      border-left: 7px double var(--frame);
+    }
+
+    .status {
+      --frame: #6c5a7b;
+      --accent: #6c5a7b;
+      color: #2d2434;
+      background:
+        linear-gradient(90deg, var(--frame) 0 15px, transparent 15px),
+        repeating-linear-gradient(-45deg, rgba(108, 90, 123, 0.22) 0 7px, transparent 7px 18px),
+        #d8ccba;
+      filter: saturate(0.78);
+    }
+
+    .status .cost {
+      visibility: hidden;
+    }
+
+    .status .typebar {
+      color: #fff7e6;
+      background: #4f405d;
+    }
+
+    .time {
+      --frame: #d6a23a;
+      --accent: #d6a23a;
+      background:
+        linear-gradient(90deg, var(--frame) 0 15px, transparent 15px),
+        radial-gradient(circle at 78% 18%, rgba(214, 162, 58, 0.28), transparent 28%),
+        var(--paper);
+    }
+
+    .time .typebar {
+      border-left: 7px solid var(--frame);
+    }
+
+    .time .textbox {
+      font-size: 18px;
+      align-content: center;
+    }
+
+    @media (max-width: 680px) {
+      main {
+        padding: 18px;
+      }
+
+      .sheet {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Card Template Prototype</h1>
+    <p class="intro">
+      Poker-card ratio, warm menu-paper surface, faction/type color strip on
+      the left, large readable art, compact type line, rules box, and small
+      production metadata. The examples below use the same structure with type
+      specific treatments.
+    </p>
+
+    <section class="sheet" aria-label="Card template examples">
+      <div class="card-wrap">
+        <div class="label">Dish example</div>
+        <article class="card dish" style="--frame:#3f8f45; --accent:#d6453d">
+          <header class="titlebar">
+            <div class="title">Margherita Pizza</div>
+            <div class="cost">3</div>
+          </header>
+          <figure class="art">
+            <img src="../assets/card-art/v1/margherita_pizza.png" alt="">
+          </figure>
+          <div class="typebar">
+            <span>Dish - Main</span>
+            <span class="value">Taste 2</span>
+          </div>
+          <section class="textbox">
+            <div class="tags">
+              <span class="tag">Cheese</span>
+              <span class="tag">Tomato</span>
+            </div>
+            <p class="rules">During judging, if you present another Cheese or
+            Tomato dish, this gets +1 Taste.</p>
+          </section>
+          <footer class="footer">
+            <span>Italian</span>
+            <span class="copies">3 copies</span>
+          </footer>
+        </article>
+      </div>
+
+      <div class="card-wrap">
+        <div class="label">Technique example</div>
+        <article class="card action" style="--frame:#7a7a72; --accent:#7a7a72">
+          <header class="titlebar">
+            <div class="title">Knife Skills</div>
+            <div class="cost">3</div>
+          </header>
+          <figure class="art">
+            <img src="../assets/card-art/v1/knife_skills.png" alt="">
+          </figure>
+          <div class="typebar">
+            <span>Technique</span>
+            <span class="value">Action</span>
+          </div>
+          <section class="textbox">
+            <p class="rules">Upgrade a starter card by up to 2.</p>
+          </section>
+          <footer class="footer">
+            <span>Neutral</span>
+            <span class="copies">3 copies</span>
+          </footer>
+        </article>
+      </div>
+
+      <div class="card-wrap">
+        <div class="label">Reaction example</div>
+        <article class="card reaction" style="--frame:#2f5da8; --accent:#c44736">
+          <header class="titlebar">
+            <div class="title">Mock</div>
+            <div class="cost">3</div>
+          </header>
+          <figure class="art">
+            <img src="../assets/card-art/v1/mock.png" alt="">
+          </figure>
+          <div class="typebar">
+            <span>Reaction</span>
+            <span class="value">Interrupt</span>
+          </div>
+          <section class="textbox">
+            <p class="rules">Choose opponent's highest-Taste presented dish. It
+            gets -2 Taste this turn. Draw 1.</p>
+          </section>
+          <footer class="footer">
+            <span>French</span>
+            <span class="copies">2 copies</span>
+          </footer>
+        </article>
+      </div>
+
+      <div class="card-wrap">
+        <div class="label">Passive example</div>
+        <article class="card passive" style="--frame:#2f7d6d; --accent:#2f7d6d">
+          <header class="titlebar">
+            <div class="title">Conveyor Belt</div>
+            <div class="cost">5</div>
+          </header>
+          <figure class="art">
+            <img src="../assets/card-art/v1/conveyor_belt.png" alt="">
+          </figure>
+          <div class="typebar">
+            <span>Passive</span>
+            <span class="value">Ongoing</span>
+          </div>
+          <section class="textbox">
+            <p class="rules">At the start of your turn, look at the top 3 cards
+            of your deck and put them back in any order.</p>
+          </section>
+          <footer class="footer">
+            <span>Japanese</span>
+            <span class="copies">1 copy</span>
+          </footer>
+        </article>
+      </div>
+
+      <div class="card-wrap">
+        <div class="label">Status example</div>
+        <article class="card status">
+          <header class="titlebar">
+            <div class="title">Distraction</div>
+            <div class="cost">0</div>
+          </header>
+          <figure class="art">
+            <img src="../assets/card-art/v1/distraction.png" alt="">
+          </figure>
+          <div class="typebar">
+            <span>Status</span>
+            <span class="value">Dead card</span>
+          </div>
+          <section class="textbox">
+            <p class="rules">No effect.</p>
+          </section>
+          <footer class="footer">
+            <span>Clutter</span>
+            <span class="mini-row"><span class="pip"></span><span class="pip"></span><span class="pip"></span></span>
+          </footer>
+        </article>
+      </div>
+
+      <div class="card-wrap">
+        <div class="label">Time example</div>
+        <article class="card time">
+          <header class="titlebar">
+            <div class="title">Practice Session</div>
+            <div class="cost">3</div>
+          </header>
+          <figure class="art">
+            <img src="../assets/card-art/v1/practice_session.png" alt="">
+          </figure>
+          <div class="typebar">
+            <span>Time</span>
+            <span class="value">Economy</span>
+          </div>
+          <section class="textbox">
+            <p class="rules">Gain 2 Time.</p>
+          </section>
+          <footer class="footer">
+            <span>Always available</span>
+            <span class="copies">Default</span>
+          </footer>
+        </article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

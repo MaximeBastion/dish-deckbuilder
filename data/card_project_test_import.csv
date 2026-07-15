@@ -1,0 +1,8 @@
+nom,dos,Name,time_cost,time_cost_background_color,background_color,artwork,type_line_left,tags,tags_text,rules_text,taste,taste_background_color,faction,folder
+Margherita Pizza,,Margherita Pizza,3,#D6A23A,#3F8F45,https://raw.githubusercontent.com/MaximeBastion/dish-deckbuilder/develop/assets/card-art/v1/margherita_pizza.png,Dish - Main,,"Cheese, Tomato",During judging if you present another Cheese or Tomato dish this gets +1 Taste.,2,#F2C14E,Italian,DishDeckbuilder
+Knife Skills,,Knife Skills,3,#D6A23A,#7A7A72,https://raw.githubusercontent.com/MaximeBastion/dish-deckbuilder/develop/assets/card-art/v1/knife_skills.png,Technique,,,Upgrade a starter card by up to 2.,,#00000000,Neutral,DishDeckbuilder
+Wasabi Attack,,Wasabi Attack,4,#D6A23A,#2F7D6D,https://raw.githubusercontent.com/MaximeBastion/dish-deckbuilder/develop/assets/card-art/v1/wasabi_attack.png,Reaction,,Seafood,"Choose an opponent dish.
+It gets -1 Taste. If it is not Seafood it gets -3 Taste instead.",,#00000000,Japanese,DishDeckbuilder
+Cheese Wheel,,Cheese Wheel,5,#D6A23A,#F2C14E,https://raw.githubusercontent.com/MaximeBastion/dish-deckbuilder/develop/assets/card-art/v1/cheese_wheel.png,Passive,,Cheese,Your Cheese dishes get +1 Taste.,,#00000000,French+Italian,DishDeckbuilder
+Prep,,Prep,,#00000000,#D6A23A,https://raw.githubusercontent.com/MaximeBastion/dish-deckbuilder/develop/assets/card-art/v1/prep.png,Time,,,Gain 1 Time.,,#00000000,Neutral,DishDeckbuilder
+Distraction,,Distraction,,#00000000,#6C5A7B,https://raw.githubusercontent.com/MaximeBastion/dish-deckbuilder/develop/assets/card-art/v1/distraction.png,Status,,,No effect.,,#00000000,Neutral,DishDeckbuilder
