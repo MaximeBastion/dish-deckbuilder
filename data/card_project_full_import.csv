@@ -1,5 +1,5 @@
 nom,dos,Name,time_cost,time_cost_background_color,background_color,artwork,type_line_left,tags,tags_text,rules_text,taste,taste_background_color,faction,folder
-Simple Soup,,Simple Soup,2,#D6A23A,#7A7A72,https://raw.githubusercontent.com/MaximeBastion/dish-deckbuilder/develop/assets/card-art/v1/mock.png,Dish - Extra,,,,1,#FFF2B8,Neutral,DishDeckbuilder
+Simple Soup,,Simple Soup,2,#D6A23A,#7A7A72,https://raw.githubusercontent.com/MaximeBastion/dish-deckbuilder/develop/assets/card-art/v1/simple_soup.png,Dish - Extra,,,,1,#FFF2B8,Neutral,DishDeckbuilder
 Prep,,Prep,,#00000000,#D6A23A,https://raw.githubusercontent.com/MaximeBastion/dish-deckbuilder/develop/assets/card-art/v1/prep.png,Time,,,Gain 1 Time.,,#00000000,Neutral,DishDeckbuilder
 Practice Session,,Practice Session,3,#D6A23A,#D6A23A,https://raw.githubusercontent.com/MaximeBastion/dish-deckbuilder/develop/assets/card-art/v1/practice_session.png,Time,,,Gain 2 Time.,,#00000000,Neutral,DishDeckbuilder
 Masterclass,,Masterclass,6,#D6A23A,#D6A23A,https://raw.githubusercontent.com/MaximeBastion/dish-deckbuilder/develop/assets/card-art/v1/masterclass.png,Time,,,Gain 3 Time.,,#00000000,Neutral,DishDeckbuilder
