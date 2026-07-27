@@ -1,7 +1,7 @@
 # Rules
 
-This document describes the current first-playtest rules. Anything marked
-`Open` is intentionally unresolved.
+This document describes the current playtest rules. Anything marked `Open` is
+intentionally unresolved.
 
 ## Game Premise
 
@@ -16,7 +16,11 @@ but the gameplay focus should stay on dishes and what the chef/player does.
 ## Players
 
 - Designed first for 2 players.
-- Multiplayer may be explored later with a different scoring wrapper.
+- Multiplayer playtests can use the same turn structure: each opponent gets a
+  chance to interact, and every player's board stays visible until that player
+  starts their next turn.
+- Multiplayer uses a separate Favor total instead of the 1v1 tug-of-war judge
+  track.
 
 ## Main Terms
 
@@ -27,19 +31,44 @@ but the gameplay focus should stay on dishes and what the chef/player does.
   and tags to the Dish it is attached to, but does not count as a separate
   presented Dish or course.
 - **Taste**: the scoring value of a dish.
-- **Favor**: progress on the judge track.
+- **Favor**: progress toward winning over the judge.
 - **Peel**: remove a card from your deck permanently.
-- **Reaction**: a card played during the opponent's interaction step.
+- **Scorch N**: Peel the top N cards of your deck. This is a risky version of
+  Peel used by spicy, high-Taste cards.
+- **Reaction**: a card played during an opponent's interaction step.
 - **Status**: a harmful or blank card added to a deck by effects.
+- **Board**: the cards a player played or presented on their most recent turn.
+  The board stays visible until the beginning of that player's next turn.
+- **Fridge / Frigo**: a one-card reserve slot, inspired by Flesh and Blood's
+  arsenal. A card in the Fridge is saved for a later turn instead of being
+  discarded with the rest of the hand.
 
 ## Win Condition
 
-The judge starts at the center of a favor track. When a player gains Favor, move
-the judge that many spaces toward that player. If the judge reaches a player,
-that player wins.
+In 1v1, the judge starts at the center of a favor track. When a player gains
+Favor, move the judge that many spaces toward that player. If the judge reaches
+a player, that player wins.
 
-Open: exact track length. Start by testing a short track so games end before
+With 3 or more players, each player tracks their own Favor total instead. When a
+player reaches 20 Favor, that player wins.
+
+Open: exact 1v1 track length and multiplayer Favor threshold. Start by testing
+a short 1v1 track and a 20-Favor multiplayer threshold so games end before
 players want them to end.
+
+Open: whether the multiplayer threshold should also replace the 1v1 judge
+track. The distinction is flavorful in 1v1, but one unified scoring system may
+be easier to teach and balance.
+
+For card text:
+
+- In 1v1, the judge favors the player whose side of the track the judge is on.
+  At the center, the judge favors nobody.
+- With 3 or more players, the judge favors the single player with the most
+  Favor. If there is a tie for the most Favor, the judge favors nobody.
+- `If the Judge favors you` only applies when you are that favored player.
+- `If the Judge does not favor you` only applies when another player is favored.
+  It does not apply when the judge favors nobody.
 
 ## Starting Deck
 
@@ -81,7 +110,7 @@ Use a Star Realms-style market row.
 
 The first card a player learns each turn goes on top of the appropriate deck
 instead of the discard pile. Usually this means the learner's deck. If a card
-causes the opponent to gain a Status, that Status can go on top of the
+causes an opponent to gain a Status, that Status can go on top of that
 opponent's deck if it is the first card learned that turn.
 
 Open: whether every first learned card should topdeck, or only some cards.
@@ -90,36 +119,60 @@ Open: whether every first learned card should topdeck, or only some cards.
 
 On your turn:
 
-1. Cook: play cards and learn cards in any order.
-2. Present your final meal.
-3. The opponent has one interaction step and may play Reactions.
-4. Score your presented meal and move the judge.
-5. Discard played cards, presented dishes, and unplayed hand cards.
-6. Draw a new hand.
+1. Start of turn: discard your board from your previous turn.
+2. Draw a new hand.
+3. Cook: play cards and learn cards in any order.
+4. Present your final meal.
+5. Opponents have one interaction step and may play Reactions.
+6. Score your presented meal and gain Favor.
+7. Fridge: if your Fridge is empty, you may put 1 card from your hand into your
+   Fridge.
+8. Discard any remaining unplayed hand cards. Cards on your board stay there
+   until the beginning of your next turn.
 
 Open: exact hand size. Start by testing 5.
 
-## Drawing And Reshuffling
+## Board, Cleanup, And Drawing
 
-Played cards stay in a play area until cleanup. Presented dishes stay in the
-presented meal until cleanup. They do not immediately go to the discard pile.
+Played cards and presented dishes stay on that player's board after scoring.
+They do not immediately go to the discard pile.
+
+At the beginning of a player's next turn, that player discards all cards on
+their board, then draws a new hand. This makes each player's most recent meal
+available for comparison during other players' turns.
+
+Only the active player cleans up their own board at the beginning of their turn.
+Other players' boards remain visible until those players' next turns.
 
 When a player must draw or reveal from an empty deck, shuffle that player's
 discard pile to form a new deck, then continue drawing or revealing. Cards
-played this turn, presented this turn, or learned this turn are not in the
-discard pile unless an effect explicitly put them there.
+currently on a board, in a Fridge, or learned this turn are not in the discard
+pile unless an effect explicitly put them there.
+
+## Fridge / Frigo
+
+Each player has one Fridge slot.
+
+- A Fridge can hold at most 1 card.
+- During the Fridge step at the end of your turn, if your Fridge is empty, you
+  may put 1 card from your hand into your Fridge.
+- Cards in the Fridge are face down.
+- Cards in the Fridge are not in your hand, deck, discard pile, or board.
+- On your turn, you may play a card from your Fridge as if it were in your hand.
+- If a card leaves the Fridge, the Fridge becomes empty.
 
 ## Presenting Dishes
 
-After the Cook step, a player presents dishes from their hand as a final meal.
-Course labels matter, but they are not hard slots for now: a meal may include
-duplicate course types.
+After the Cook step, a player presents dishes from their hand, Fridge, or cards
+played this turn as a final meal. Course labels matter, but they are not hard
+slots for now: a meal may include duplicate course types.
 
 Card effects resolve when played by default. Effects that depend on the final
 presented meal should say `During judging`.
 
-During the Cook step, effects that modify a Dish may target a Dish in hand.
-Those modifiers apply if that Dish is presented this turn.
+During the Cook step, effects that modify a Dish may target a Dish in hand, in
+your Fridge, or on your board if it was played this turn. Those modifiers apply
+if that Dish is presented this turn.
 
 Current course types:
 
@@ -127,9 +180,18 @@ Current course types:
 - Main
 - Dessert
 - Extra
+- Flexible
 
 Only presented dishes contribute Taste unless a card says otherwise. Dishes that
 are not presented may still have play effects if the card allows it.
+
+When you present a Flexible dish, choose whether it counts as Appetizer, Main,
+Dessert, or Extra for that judging. Flexible dishes are intentionally inefficient
+on raw Taste, but they help complete awkward meals.
+
+Because boards persist until the beginning of their owners' next turns, effects
+may compare against dishes on other players' boards. A dish on a player's board
+is still that player's presented dish until that player cleans up their board.
 
 Meal bonuses:
 
@@ -143,10 +205,10 @@ presented dishes.
 
 ## Interaction
 
-The opponent gets one interaction step before scoring. Reactions are the main
+Each opponent gets one interaction step before scoring. Reactions are the main
 interaction card type.
 
-First-test constraint:
+Current constraint:
 
 - A player may play at most 1 Reaction during each interaction step.
 
@@ -161,7 +223,7 @@ The first Status card to test is:
 |---|---|---|
 | Distraction | Status | No effect. |
 
-Cards may give the opponent a `Distraction`. `Distraction` can be Peeled.
+Cards may give an opponent a `Distraction`. `Distraction` can be Peeled.
 
 ## Factions
 
