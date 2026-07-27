@@ -3,7 +3,6 @@ quantity,folder,card_name
 16,DishDeckbuilder,Soupe simple
 10,DishDeckbuilder,Seance d'entrainement
 10,DishDeckbuilder,Masterclass
-10,DishDeckbuilder,Distraction
 2,DishDeckbuilder,Plateau de fromages
 2,DishDeckbuilder,Raclette
 1,DishDeckbuilder,Toast de foie gras
@@ -13,7 +12,7 @@ quantity,folder,card_name
 3,DishDeckbuilder,Burger
 3,DishDeckbuilder,Hot dog
 2,DishDeckbuilder,Poulet frit
-3,DishDeckbuilder,Frites
+3,DishDeckbuilder,Frites de la liberte
 2,DishDeckbuilder,Cornichons frits
 2,DishDeckbuilder,Sloppy Joe
 2,DishDeckbuilder,Assortiment de sushis
@@ -28,10 +27,14 @@ quantity,folder,card_name
 2,DishDeckbuilder,Risotto
 2,DishDeckbuilder,Tiramisu
 2,DishDeckbuilder,Arancini
+2,DishDeckbuilder,Ailes au piment fantome
+2,DishDeckbuilder,Defi wasabi
+3,DishDeckbuilder,Salade d'accompagnement
+2,DishDeckbuilder,Menu degustation
 3,DishDeckbuilder,Coup de couteau
 2,DishDeckbuilder,Plan de travail propre
 3,DishDeckbuilder,Degustation
-1,DishDeckbuilder,Provocation
+2,DishDeckbuilder,Provocation
 2,DishDeckbuilder,Parfait
 2,DishDeckbuilder,Moquerie
 2,DishDeckbuilder,Noyer dans le beurre
@@ -54,6 +57,24 @@ quantity,folder,card_name
 1,DishDeckbuilder,Casser les spaghetti est un crime
 2,DishDeckbuilder,Plus d'huile d'olive!
 2,DishDeckbuilder,Plus de parmigiano!
+2,DishDeckbuilder,Groupe de consommateurs
+2,DishDeckbuilder,Bombardement Yelp
+1,DishDeckbuilder,Descente de l'inspection sanitaire
+1,DishDeckbuilder,On va construire un mur
+2,DishDeckbuilder,Les refills de la liberte ne sont pas gratuits
+2,DishDeckbuilder,Greve du dejeuner obligatoire
+2,DishDeckbuilder,Vous appelez ca des sushis ?
+2,DishDeckbuilder,Nonna dit non
+1,DishDeckbuilder,Tribunal de l'ananas
+2,DishDeckbuilder,Raid dans le garde-manger
+2,DishDeckbuilder,Mise en place
+2,DishDeckbuilder,Scroller le menu en panique
+2,DishDeckbuilder,Baiser du chef
+2,DishDeckbuilder,Pub du Super Bowl
+2,DishDeckbuilder,Planification du bento
+2,DishDeckbuilder,Recette secrete de famille
+2,DishDeckbuilder,Snack de minuit
+2,DishDeckbuilder,Raid dans le frigo
 1,DishDeckbuilder,5 etoiles
 1,DishDeckbuilder,Refills a volonte
 1,DishDeckbuilder,Tapis roulant
@@ -64,3 +85,28 @@ quantity,folder,card_name
 1,DishDeckbuilder,Station de friture
 1,DishDeckbuilder,Empire de sauce rouge
 1,DishDeckbuilder,Cuiseur a riz
+1,DishDeckbuilder,Diplomatie du burger
+1,DishDeckbuilder,Inspection bureaucratique du fromage
+1,DishDeckbuilder,Shogunat du tapis roulant
+1,DishDeckbuilder,Protection des temoins de Nonna
+1,DishDeckbuilder,Cuisine d'influenceur
+1,DishDeckbuilder,Campagne de review bombing
+1,DishDeckbuilder,Abonnement meal prep
+1,DishDeckbuilder,Menu algorithmique
+1,DishDeckbuilder,Boites de meal prep
+1,DishDeckbuilder,FACTION - Appropriation
+1,DishDeckbuilder,FACTION - Legislation
+1,DishDeckbuilder,FACTION - Moins c est plus
+1,DishDeckbuilder,FACTION - Sans creme !
+1,DishDeckbuilder,Mefiance envers les etrangers
+1,DishDeckbuilder,Inegalites salariales
+6,DishDeckbuilder,Distraction
+6,DishDeckbuilder,Coma alimentaire
+6,DishDeckbuilder,Avis Yelp
+6,DishDeckbuilder,Inspection sanitaire
+6,DishDeckbuilder,Greve
+6,DishDeckbuilder,Honte
+6,DishDeckbuilder,Jugement
+6,DishDeckbuilder,Mangia Mangia !
+6,DishDeckbuilder,En greve
+6,DishDeckbuilder,On a entendu que vous aviez du petrole
