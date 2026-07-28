@@ -20,7 +20,7 @@ Onigiri,"Dish - Extra; Tags: Rice; Look at the top 3 cards of your deck. Discard
 Tempura,"Dish - Appetizer; Tags: Seafood, Fried; During judging if you present no duplicate core course this gets +1 Taste.; Taste 2.",#2F7D6D,3
 Katsu Curry Rice,"Dish - Main; Tags: Fried, Rice; If you Peeled this turn this gets +1 Taste.; Taste 3.",#2F7D6D,4
 Sashimi,"Dish - Appetizer; Tags: Seafood; Draw 2 then discard 1. If you discard a Status, gain 1 Time.; Taste 2.",#2F7D6D,3
-Takoyaki,"Dish - Extra; Tags: Seafood, Fried; If this is your only Extra you may Peel 1. Then look at the top 2 cards of your deck and put them back in any order.; Taste 2.",#2F7D6D,3
+Takoyaki,"Dish - Extra; Tags: Seafood, Fried; If this is your only Extra, you may Peel 1. Then look at the top 2 cards of your deck. You may put 1 on the bottom of your deck.; Taste 2.",#2F7D6D,3
 Margherita Pizza,"Dish - Main; Tags: Cheese, Tomato; During judging if you present another Cheese or Tomato dish this gets +1 Taste.; Taste 2.",#3F8F45,3
 Spaghetti Bolognese,Dish - Main; Tags: Tomato; If the Judge does not favor you this gets +2 Taste.; Taste 2.,#3F8F45,3
 Caprese,"Dish - Appetizer; Tags: Cheese, Tomato; During judging if you present a Main gain +1 Favor.; Taste 2.",#3F8F45,3
@@ -47,7 +47,7 @@ Party,Technique; Draw 1 and gain 1 Time. During judging if you present at least 
 Ketchup Me That,"Technique; Tags: Meat, Fried; Choose a Meat or Fried dish. It gets +2 Taste.",#C44736,2
 Appropriate,"Reaction; Choose an opponent's presented dish. After that opponent scores, steal that dish and add it to your discard pile. Peel Appropriate.",#C44736,6
 Purify,"Technique; Peel up to 2 cards. If you Peel a Status this way, draw 1.",#2F7D6D,2
-Order,Technique; Look at the top 5 cards of your deck. Put 2 into your hand and the rest back in any order.,#2F7D6D,2
+Order,Technique; Look at the top 5 cards of your deck. Put 2 into your hand and the rest on the bottom of your deck in any order.,#2F7D6D,2
 Omakase,Technique; Reveal cards from your deck until you reveal a Dish. Present it. If it completes all 3 core courses gain +2 Favor.,#2F7D6D,5
 Less Is More,Technique; During judging if you present exactly Appetizer Main and Dessert with no duplicate core course gain +5 Favor.,#2F7D6D,3
 Wasabi Attack,Reaction; Tags: Seafood; Choose an opponent's dish. It gets -1 Taste. If it is not Seafood it gets -3 Taste instead. Its owner Peels the top card of their deck.,#2F7D6D,4
@@ -71,13 +71,13 @@ Mise En Place,Technique; Look at the top 6 cards of your deck. Put 2 into your h
 Doomscroll The Menu,Technique; Look at the top 4 cards of your deck. Put 1 into your hand and discard the rest. Gain a Distraction.,#7A7A72,2
 Chef's Kiss,Technique; Draw 2. Choose a Dish in your hand; it gets +1 Taste this turn.,#2F5DA8,3
 Super Bowl Commercial Break,Technique; Draw 2. Each opponent may draw 1; each who does gains Food Coma.,#C44736,3
-Bento Box Planning,Technique; Draw 1. Look at the top 4 cards of your deck and put them back in any order. You may discard any Statuses among them.,#2F7D6D,3
+Bento Box Planning,Technique; Look at the top 4 cards of your deck. Put 1 into your hand. You may discard any Statuses among the rest. Put the rest on the bottom of your deck in any order.,#2F7D6D,3
 Secret Family Recipe,"Technique; Tags: Tomato, Cheese; Put a Dish from your discard pile into your hand. Draw 1. If it is Tomato or Cheese, gain 1 Time.",#3F8F45,4
 Midnight Snack,"Technique; Play a card from your Fridge. If it is a Dish, it gets +2 Taste this turn. Draw 1.",#7A7A72,2
 Fridge Raid,"Technique; Look at an opponent's Fridge. You may discard that card. If you do, that opponent gains Food Coma.",#C44736,3
 5 Stars,Passive; During judging if one of your dishes has strictly more Taste than every opponent's dish gain +2 Favor.,#2F5DA8,7
 Bottomless Refills,Passive; During judging if you present an Extra gain +2 Favor.,#C44736,5
-Conveyor Belt,"Passive; At the start of your turn look at the top 3 cards of your deck and put them back in any order. If any is a Status, you may Peel 1 of them.",#2F7D6D,5
+Conveyor Belt,"Passive; At the start of your turn, before drawing, look at the top 5 cards of your deck. You may discard any Statuses among them. Put any number of the rest on the bottom of your deck and the rest on top in any order.",#2F7D6D,5
 Nonna's Table,"Passive; The first time each turn you present 4 or more dishes gain +2 Favor. If the Judge does not favor you, gain +3 Favor instead.",#3F8F45,6
 Steakhouse,Passive; Tags: Meat; Your first Meat dish each turn gets +1 Taste. During judging if you present at least 2 Meat dishes gain +2 Favor.,#9A4D2E,5
 Seafood Counter,Passive; Tags: Seafood; During judging if you present a Seafood dish gain +1 Favor and you may Peel 1.,#1F8A9B,4

@@ -24,7 +24,8 @@ but the gameplay focus should stay on dishes and what the chef/player does.
 
 ## Main Terms
 
-- **Time**: the resource spent to learn cards from the market.
+- **Time**: the resource spent to learn cards from the market. Unspent Time is
+  lost at the end of the turn unless a card says otherwise.
 - **Learn**: buy a card and add it to your deck.
 - **Dish**: a card that may be presented as part of a meal.
 - **Attach**: place a Dish under another Dish. An attached Dish adds its Taste
@@ -125,17 +126,26 @@ On your turn:
 4. Present your final meal.
 5. Opponents have one interaction step and may play Reactions.
 6. Score your presented meal and gain Favor.
-7. Fridge: if your Fridge is empty, you may put 1 card from your hand into your
+7. After-service: learn cards by spending remaining Time. This is when you can
+   spend any Time gained during judging.
+8. Fridge: if your Fridge is empty, you may put 1 card from your hand into your
    Fridge.
-8. Discard any remaining unplayed hand cards. Cards on your board stay there
+9. Discard any remaining unplayed hand cards. Cards on your board stay there
    until the beginning of your next turn.
 
 Open: exact hand size. Start by testing 5.
 
+Effects that say `at the start of your turn` resolve during step 1, after board
+cleanup and before drawing, unless the card says otherwise.
+
+During After-service, you may learn cards from the market or always-available
+cards. You may not play cards, present dishes, or resolve non-learning effects
+unless a card explicitly says otherwise.
+
 ## Board, Cleanup, And Drawing
 
-Played cards and presented dishes stay on that player's board after scoring.
-They do not immediately go to the discard pile.
+Played cards and presented dishes stay on that player's board after scoring and
+after the After-service step. They do not immediately go to the discard pile.
 
 At the beginning of a player's next turn, that player discards all cards on
 their board, then draws a new hand. This makes each player's most recent meal
@@ -190,8 +200,9 @@ Dessert, or Extra for that judging. Flexible dishes are intentionally inefficien
 on raw Taste, but they help complete awkward meals.
 
 Because boards persist until the beginning of their owners' next turns, effects
-may compare against dishes on other players' boards. A dish on a player's board
-is still that player's presented dish until that player cleans up their board.
+may compare against presented dishes on other players' boards. A dish that was
+part of a player's judged meal is still that player's presented dish until that
+player cleans up their board.
 
 Meal bonuses:
 
