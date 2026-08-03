@@ -41,6 +41,32 @@ data, not that the design is final.
   new hand.
 - [x] Use persistent boards so players can compare dishes against other players'
   most recent meals.
+- [x] Make draw effects during opponents' turns matter. Cards drawn outside your
+  turn stay in hand, and you still draw 5 at the start of your next turn.
+- [x] Restrict the post-judging phase to learning cards with remaining Time.
+- [x] Let top-N deck selection effects reshuffle discard first when the deck is
+  too small.
+- [x] Replace awkward top-deck Peel wording with the `Scorch` keyword.
+
+## Card Review Notes
+
+- [x] Rewrite `Knife Skills` without the unexplained `Upgrade` shorthand.
+- [x] Make `Clean Station` a clearer modal choice.
+- [x] Change `Taste Test` so it can only Peel the card it just discarded.
+- [ ] Revisit whether `Heckle` should hit for 2 Statuses in 1v1 after more
+  1v1 tests.
+- [ ] Revisit whether `Mine Is Better` should compare from hand or from board
+  now that boards persist.
+- [x] Increase `Order` to cost 3.
+- [x] Change `Omakase` so it finds a Dish for hand now and allows presenting it
+  later this turn.
+- [x] Change `Wasabi Attack` and `You Call That Sushi?` to use `Scorch`.
+- [x] Change `Mamma Mia!` so the found Dish can be presented this turn and the
+  judge condition grants Time instead.
+- [x] Reduce `Secondo` to cost 3.
+- [x] Buff `Doomscroll The Menu` while keeping the self-Status drawback.
+- [x] Move `Chef's Kiss` Taste tracking from hand to a Dish on board.
+- [x] Increase `5 Stars` to +4 Favor.
 
 ## General Ideas
 

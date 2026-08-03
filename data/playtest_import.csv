@@ -31,9 +31,9 @@ Ghost Pepper Wings,"Dish - Main; Tags: Meat, Fried; When you present this, Scorc
 Wasabi Challenge,"Dish - Appetizer; Tags: Seafood; When you present this, Scorch 2. If you Scorched a Status this way, gain 1 Favor.; Taste 4.",#2F7D6D,2
 Side Salad,"Dish - Flexible; When you present this, choose which course it counts as.; Taste 1.",#7A7A72,2
 Tasting Menu,"Dish - Flexible; When you present this, choose which course it counts as. If it completes all 3 core courses, gain 1 Time.; Taste 2.",#7A7A72,4
-Knife Skills,Technique; Upgrade a starter card by up to 2.,#7A7A72,3
-Clean Station,"Technique; Peel up to 2 starter cards. If you peeled no cards this way, Peel Clean Station.",#7A7A72,3
-Taste Test,Technique; Draw 3 then discard 1. You may Peel a starter or Status from your discard pile.,#7A7A72,2
+Knife Skills,"Technique; Choose a starter card you played this turn. If it is Prep, gain 2 Time. If it is Simple Soup, it gets +2 Taste this turn.",#7A7A72,3
+Clean Station,Technique; Choose one - Peel up to 2 starter cards; or Peel Clean Station.,#7A7A72,3
+Taste Test,"Technique; Draw 3 then discard 1. If the discarded card is a starter card or Status, you may Peel it.",#7A7A72,2
 Heckle,"Technique; Each opponent gains a Distraction. If there is only one opponent, they gain 2 Distractions instead.",#7A7A72,5
 Perfect,Technique; Choose a Dish. Double its Taste this turn.,#2F5DA8,4
 Mock,Reaction; Choose an opponent's highest-Taste presented dish. It gets -2 Taste this turn. Draw 1.,#2F5DA8,3
@@ -47,13 +47,13 @@ Party,Technique; Draw 1 and gain 1 Time. During judging if you present at least 
 Ketchup Me That,"Technique; Tags: Meat, Fried; Choose a Meat or Fried dish. It gets +2 Taste.",#C44736,2
 Appropriate,"Reaction; Choose an opponent's presented dish. After that opponent scores, steal that dish and add it to your discard pile. Peel Appropriate.",#C44736,6
 Purify,"Technique; Peel up to 2 cards. If you Peel a Status this way, draw 1.",#2F7D6D,2
-Order,Technique; Look at the top 5 cards of your deck. Put 2 into your hand and the rest on the bottom of your deck in any order.,#2F7D6D,2
-Omakase,Technique; Reveal cards from your deck until you reveal a Dish. Present it. If it completes all 3 core courses gain +2 Favor.,#2F7D6D,5
+Order,Technique; Look at the top 5 cards of your deck. Put 2 into your hand and the rest on the bottom of your deck in any order.,#2F7D6D,3
+Omakase,"Technique; Reveal cards from your deck until you reveal a Dish. Put it into your hand and discard the rest. You may present that Dish this turn. During judging if your meal completes all 3 core courses, gain +2 Favor.",#2F7D6D,5
 Less Is More,Technique; During judging if you present exactly Appetizer Main and Dessert with no duplicate core course gain +5 Favor.,#2F7D6D,3
-Wasabi Attack,Reaction; Tags: Seafood; Choose an opponent's dish. It gets -1 Taste. If it is not Seafood it gets -3 Taste instead. Its owner Peels the top card of their deck.,#2F7D6D,4
+Wasabi Attack,Reaction; Seafood; Choose an opponent's dish. It gets -1 Taste. If it is not Seafood it gets -3 Taste instead. Its owner Scorches 1.,#2F7D6D,4
 "Mangia, Mangia!","Technique; Draw 1. If the Judge does not favor you, draw 2 and gain 1 Time instead.",#3F8F45,2
-Mamma Mia!,"Technique; Reveal cards from your deck until you reveal a Dish. Put it into your hand, then draw 1. If the Judge does not favor you, you may present that Dish this turn.",#3F8F45,3
-Secondo,Technique; During judging score one Main a second time.,#3F8F45,6
+Mamma Mia!,"Technique; Reveal cards from your deck until you reveal a Dish. Put it into your hand and discard the rest, then draw 1. You may present that Dish this turn. If the Judge does not favor you, gain 1 Time.",#3F8F45,3
+Secondo,Technique; During judging score one Main a second time.,#3F8F45,3
 Breaking Spaghetti Is A Crime,Reaction; Each opponent who modified a dish this turn gains Shame. Choose one modified dish; it gets -2 Taste.,#3F8F45,4
 More Olive Oil!,"Technique; Tags: Tomato, Cheese; Choose a Tomato or Cheese dish. It gets +2 Taste. If the Judge does not favor you, it gets +3 Taste instead.",#3F8F45,3
 More Parmigiano!,"Technique; Tags: Cheese, Tomato; Choose a Main. It gets +2 Taste. If it is Cheese or Tomato it gets +3 Taste instead.",#3F8F45,2
@@ -63,19 +63,19 @@ Health Inspector Raid,Technique; Each opponent gains a Health Inspection. Rotate
 We're Gonna Build A Wall,"Technique; Each opponent gains a Health Inspection. Until your next turn, opponents cannot steal your dishes. If any opponent has more Favor than you, gain 1 Time.",#C44736,4
 Freedom Isn't Free Refills,Technique; Gain 2 Time. Each opponent gains Food Coma. During judging if you present an Extra gain +1 Favor.,#C44736,3
 Mandatory Lunch Strike,Technique; Each opponent gains Strike. You may Peel a starter card.,#2F5DA8,3
-You Call That Sushi?,"Reaction; Each opponent Peels the top card of their deck. For each Status Peeled this way, draw 1.",#2F7D6D,3
+You Call That Sushi?,"Reaction; Each opponent Scorches 1. For each Status Scorched this way, draw 1.",#2F7D6D,3
 Nonna Says No,Reaction; Cancel one Taste reduction or opponent modifier on one of your dishes. That opponent gains Shame.,#3F8F45,3
 Pineapple Tribunal,"Technique; Tags: Tomato, Cheese; Each opponent who presented or modified a Tomato or Cheese dish this turn gains Shame. If any of those dishes is American, its owner also gains a Distraction.",#3F8F45,4
 Pantry Raid,"Technique; Draw 3 then discard 2. If you discarded a Status, gain 1 Time.",#7A7A72,3
 Mise En Place,Technique; Look at the top 6 cards of your deck. Put 2 into your hand and discard the rest.,#7A7A72,3
-Doomscroll The Menu,Technique; Look at the top 4 cards of your deck. Put 1 into your hand and discard the rest. Gain a Distraction.,#7A7A72,2
-Chef's Kiss,Technique; Draw 2. Choose a Dish in your hand; it gets +1 Taste this turn.,#2F5DA8,3
+Doomscroll The Menu,Technique; Look at the top 5 cards of your deck. Put 2 into your hand and discard the rest. Gain a Distraction.,#7A7A72,2
+Chef's Kiss,Technique; Draw 2. Choose a Dish on your board; it gets +1 Taste this turn.,#2F5DA8,3
 Super Bowl Commercial Break,Technique; Draw 2. Each opponent may draw 1; each who does gains Food Coma.,#C44736,3
 Bento Box Planning,Technique; Look at the top 4 cards of your deck. Put 1 into your hand. You may discard any Statuses among the rest. Put the rest on the bottom of your deck in any order.,#2F7D6D,3
 Secret Family Recipe,"Technique; Tags: Tomato, Cheese; Put a Dish from your discard pile into your hand. Draw 1. If it is Tomato or Cheese, gain 1 Time.",#3F8F45,4
 Midnight Snack,"Technique; Play a card from your Fridge. If it is a Dish, it gets +2 Taste this turn. Draw 1.",#7A7A72,2
 Fridge Raid,"Technique; Look at an opponent's Fridge. You may discard that card. If you do, that opponent gains Food Coma.",#C44736,3
-5 Stars,Passive; During judging if one of your dishes has strictly more Taste than every opponent's dish gain +2 Favor.,#2F5DA8,7
+5 Stars,Passive; During judging if one of your dishes has strictly more Taste than every opponent's dish gain +4 Favor.,#2F5DA8,7
 Bottomless Refills,Passive; During judging if you present an Extra gain +2 Favor.,#C44736,5
 Conveyor Belt,"Passive; At the start of your turn, before drawing, look at the top 5 cards of your deck. You may discard any Statuses among them. Put any number of the rest on the bottom of your deck and the rest on top in any order.",#2F7D6D,5
 Nonna's Table,"Passive; The first time each turn you present 4 or more dishes gain +2 Favor. If the Judge does not favor you, gain +3 Favor instead.",#3F8F45,6
@@ -87,7 +87,7 @@ Red Sauce Empire,Passive; Tags: Tomato; Your Tomato dishes get +1 Taste and cost
 Rice Cooker,Passive; Tags: Rice; Rice dishes cost 1 less to learn. The first Rice dish you learn each turn goes on top of your deck even if it is not your first learned card.,#E6D8B8,4
 Burger Diplomacy,"Passive; Tags: Meat, Tomato; When you learn this, each opponent gains a Burger from the market deck or supply. Your Burgers get +2 Taste. Opponents' Burgers count as Statuses for your effects.",#C44736,6
 Bureaucratic Cheese Inspection,"Passive; Tags: Cheese; Whenever an opponent presents a dish with 5 or more Taste, they gain a Yelp Review. Your tagless dishes cost 1 more Time to learn.",#2F5DA8,6
-Conveyor Belt Shogunate,"Passive; At the start of your turn each player Peels the top card of their deck. If you Peel a Dish this way, you may present it this turn.",#2F7D6D,6
+Conveyor Belt Shogunate,"Passive; At the start of your turn each player Scorches 1. If the card you Scorch this way is a Dish, you may present it this turn.",#2F7D6D,6
 Nonna's Witness Protection,"Passive; The first time each turn an opponent gives you a Status, give that opponent Shame. Whenever an opponent gains Shame, gain 1 Favor.",#3F8F45,6
 Influencer Kitchen,"Passive; Whenever you give a Status to an opponent, gain 1 Favor. At the start of your Fridge step, if you gave no Status this turn, gain a Distraction.",#7A7A72,4
 Review Bomb Campaign,"Passive; Whenever you add a Status to an opponent's deck, put 1 token here. If there are 7 or more tokens here at judging, you win the game.",#6C5A7B,7

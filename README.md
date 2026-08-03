@@ -14,6 +14,8 @@ to review.
   unresolved ideas, and future card/rule directions.
 - [Design concepts](docs/design-concepts.md): emotional target, design pillars,
   faction identities, and constraints.
+- [Balance baseline](docs/balance-baseline.md): provisional value curve,
+  effect pricing, and current card outliers.
 - [Art direction](docs/art-direction.md): v1 placeholder artwork style and
   prompt template.
 

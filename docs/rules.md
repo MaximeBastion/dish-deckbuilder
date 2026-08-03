@@ -121,7 +121,7 @@ Open: whether every first learned card should topdeck, or only some cards.
 On your turn:
 
 1. Start of turn: discard your board from your previous turn.
-2. Draw a new hand.
+2. Draw 5 cards.
 3. Cook: play cards and learn cards in any order.
 4. Present your final meal.
 5. Opponents have one interaction step and may play Reactions.
@@ -134,6 +134,10 @@ On your turn:
    until the beginning of your next turn.
 
 Open: exact hand size. Start by testing 5.
+
+When you draw cards during another player's turn, keep those cards in your hand.
+At the start of your next turn, still draw the full hand size. This keeps
+Reaction draw effects meaningful.
 
 Effects that say `at the start of your turn` resolve during step 1, after board
 cleanup and before drawing, unless the card says otherwise.
@@ -148,7 +152,7 @@ Played cards and presented dishes stay on that player's board after scoring and
 after the After-service step. They do not immediately go to the discard pile.
 
 At the beginning of a player's next turn, that player discards all cards on
-their board, then draws a new hand. This makes each player's most recent meal
+their board, then draws 5 cards. This makes each player's most recent meal
 available for comparison during other players' turns.
 
 Only the active player cleans up their own board at the beginning of their turn.
@@ -158,6 +162,11 @@ When a player must draw or reveal from an empty deck, shuffle that player's
 discard pile to form a new deck, then continue drawing or revealing. Cards
 currently on a board, in a Fridge, or learned this turn are not in the discard
 pile unless an effect explicitly put them there.
+
+When an effect tells a player to look at the top N cards of their deck and that
+deck has fewer than N cards, that player may shuffle their discard pile into
+their deck before looking. If they do not, they look at as many cards as are
+available.
 
 ## Fridge / Frigo
 
