@@ -255,7 +255,7 @@ The current factions are:
 - Italian
 
 Each faction has access to exactly 3 dish tags. Each tag is shared by exactly 2
-factions. See [faction_tag_access.csv](../data/faction_tag_access.csv).
+factions. See [faction_tag_access.csv](../data/metadata/faction_tag_access.csv).
 
 ## Dish Tags
 

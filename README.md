@@ -21,12 +21,20 @@ to review.
 
 ## Data
 
-- [dish_tags.csv](data/dish_tags.csv): the six strict dish tags.
-- [dishes.csv](data/dishes.csv): playtest dish cards.
-- [faction_tag_access.csv](data/faction_tag_access.csv): which factions share
-  each tag.
-- [factions.csv](data/factions.csv): faction flavor and mechanical identities.
-- [actions.csv](data/actions.csv): playtest technique and reaction cards.
-- [passives.csv](data/passives.csv): playtest long-term support cards.
-- [statuses.csv](data/statuses.csv): status cards created by effects.
-- [time_cards.csv](data/time_cards.csv): baseline Time cards.
+The source of truth for UI imports is intentionally small:
+
+- [cards.csv](data/cards.csv): latest UI-ready card definitions. This includes
+  Status cards, because they can be spawned during the game.
+- [deck.csv](data/deck.csv): latest UI-ready deck composition. This excludes
+  Status cards that are only spawned by effects.
+
+Older card and deck exports are not kept as separate files. Use Git history to
+inspect earlier versions.
+
+Game metadata lives separately from UI-ready import data:
+
+- [dish_tags.csv](data/metadata/dish_tags.csv): the six strict dish tags.
+- [faction_tag_access.csv](data/metadata/faction_tag_access.csv): which
+  factions share each tag.
+- [factions.csv](data/metadata/factions.csv): faction flavor and mechanical
+  identities.
